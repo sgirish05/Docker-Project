@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pre_deployment') {
+            steps {
+                echo 'Pre deployment Completed'
+            }
+        }
+
+
+        stage('Deployment') {
+            steps {
+                echo 'Deployment Completed'
+            }
+        }
+
+
+        stage('Post_Deployment') {
+            steps {
+                echo 'Post Deployment completed'
+            }
+        }
+
+
+        stage('Validation') {
+            steps {
+                echo 'Validation Completed'
+            }
+        }
+
+
+   }
+}
